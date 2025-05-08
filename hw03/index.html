@@ -119,10 +119,33 @@
       text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
   }
 
-  .toprow {
+    .toprow {
     margin-top: 36px;
   }
+  .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
 
+        .image-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+  .image-container img.hover-img {
+            opacity: 0;
+        }
+
+  .image-container:hover img.hover-img {
+            opacity: 1;
+        }
+
+  .image-container:hover img.default-img {
+            opacity: 0;
+        }
+  
   .bottomrow {
     margin-bottom: 36px;
   }
@@ -147,14 +170,14 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 03</h1>
+      <h1>作業 03-相似分析</h1>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的經驗讓我感到非常有趣。只需執行程式，電腦就能幫我計算出與誰的文字最相似，這一點讓我印象深刻。整個過程從最初的手寫程式碼到逐步建構和調試，最終看到成果，讓我感到非常有成就感。特別是當我意識到自己能創造出這樣的工具時，心中充滿了驚喜和自豪。這次作業不僅提升了我的程式設計能力，也讓我更加熱愛這個領域！
     </div>
   </div>
 
@@ -172,17 +195,17 @@
           <td rowspan="4" id="myTotal"></td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 上傳 1個與lpips和ssim有關的.csv檔</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 能夠在散點圖中呈現結果</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 製造hover效果</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
@@ -195,14 +218,18 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>其他人的"陳"和我的相似度</figcaption>
+            <img src="results.png" width="700px"/>
+        </figure>
     </div>
   </div>
-
+ <!-- ------------------------------------------------>
+  <div class="row hw12" align="center">
+    <iframe style="background-color: #fff;" src="hover.html" width="800" height="600" frameborder="0"></iframe>
+  </div>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
