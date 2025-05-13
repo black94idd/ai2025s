@@ -23,7 +23,14 @@
     font-family:'CircleFont';
     src: url(https://circle472.github.io/ct2022s/hw04/CircleFont_v2.woff2); 
   }
-
+  @font-face {
+    font-family:'t113378043';
+    src: url(https://Garvin2009.github.io/ai2025s/hw02/113378043big5.woff2);
+    }
+  @font-face {
+    font-family:'113378043noto';
+    src: url(https://Garvin2009.github.io/ai2025s/hw02/113378043noto.woff2);
+    }
   table {
       border-collapse: collapse;
       border: 2px solid white; /* rgba(217,140,144,1) */
@@ -49,11 +56,18 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline:none;
       font-size: 14px;
-      font-family: Trebuchet, Arial, sans-serif;
+      font-family: CircleFont, Arial, sans-serif;
       font-weight: bold;
       cursor:pointer;
       border:1px solid #ddd;
   }
+  p1{
+    font-family:'t113378043';
+  }
+  p2{
+    font-family:'113378043noto';
+  }
+  
   .flipswitch:after
   {
       position:absolute;
@@ -147,17 +161,31 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 02</h1>
+      <h1>作業 02-機器生成</h1>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次關於「生成字體」的學習與實作過程，讓我對生成式人工智慧在字型風格轉換上的應用有了更深刻的了解。透過zi2zi這套系統，我們可以從少量的手寫字樣本，訓練模型進行風格轉換，最終生成完整的個人化字體。整個流程從建立環境、資料處理、樣本製作、模型訓練到推論，都非常完整，且每一步都與深度學習的實務密切相關，尤其在訓練時的參數調整與資料前處理，更凸顯出資料品質對模型準確率的重要性。透過Fontdiffuser在Colab上的操作，我也學會了如何利用雲端GPU資源進行模型微調，讓繁瑣的訓練過程變得更具效率。實作過程雖然繁瑣，但每個步驟都讓我更理解AI如何從原始數據中學習與模仿，也對未來將AI應用於創意設計領域充滿期待。
     </div>
   </div>
-
+   <!-- ------------------------------------------------>
+  <div class="row hw12">
+      <div class="col-md-12 twenty">
+        big5字體包位置連結：授權至SIL開源字型
+        <input type="button" name="back" onclick="location.href='https://github.com/black94idd/ai2025s/blob/main/hw02/113378043big5.ttf'" value="按我 ٩(｡・ω・｡)و 前往">
+        (p.s 請記得修改網址)
+      </div>
+  </div>
+  <div class="row hw12">
+      <div class="col-md-12 twenty">
+        noto字體包位置連結：授權至SIL開源字型
+        <input type="button" name="back" onclick="location.href='https://github.com/Garvin2009/ai2025s/blob/main/hw02/113378043noto.ttf'" value="按我 ٩(｡・ω・｡)و 前往">
+        (p.s 請記得修改網址)
+      </div>
+  </div>
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
