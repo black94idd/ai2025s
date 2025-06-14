@@ -6,7 +6,7 @@
 
 **Dead Cells**
 
-![alt text](image-6.png)
+![alt text](Dead_cells_cover_art.png)
 
 第15組  
 
