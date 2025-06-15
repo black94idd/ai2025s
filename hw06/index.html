@@ -154,7 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次用文字生成圖片、還把它們串成影片的實驗，真的讓我眼界大開。一開始只是打幾句描述，沒想到 AI 居然能那麼快、那麼準確地把畫面做出來，而且還有質感！整個過程像是在跟一個超強的創作夥伴合作，我丟出想法，它幫我視覺化出來，不只省時，還激發出更多靈感。當圖片變成一段影片時，那感覺就像是腦海中的畫面被「實體化」了，超有成就感。這讓我重新思考創作的方式，也更期待 AI 在創意領域能帶來什麼樣的新火花。
     </div>
   </div>
 
@@ -170,22 +170,23 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,12 +198,52 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint:based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">Lora:  chibi-laugh</a><br> 
+       <td>1.Simple baseline - Comfy UI 環境設定完成</td><br>
+       <img src="1.png"  width="800" height="200"><br>
     </div>
   </div>
-
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>2.Medium baseline - 生成角色的圖片</td><br>
+       <img src="2.png"  width="500" height="600"><br>
+       <td> 使用提示詞:
+     "0": "spring day, outdoor basketball court, girl shooting, ponytail, sportswear",
+  "10": "spring day, outdoor basketball court, girl shooting, ponytail, sportswear",
+  "20": "spring day, outdoor basketball court, girl dribbling, breeze, sweatband",
+  "30": "summer day, indoor gym, girl jump shot, basketball uniform, sunlight",
+  "40": "summer day, indoor gym, girl layup, dynamic pose, number jersey",
+  "50": "summer day, indoor gym, girl mid-air, intense focus, crowd blurred",
+  "60": "fall day, outdoor court with fallen leaves, girl passing ball, long sleeves",
+  "70": "fall day, windy court, girl catching pass, headband, rustling leaves",
+  "80": "fall day, street basketball, girl defending, layered sportswear",
+  "90": "winter, snow-covered court, girl practicing alone, hoodie, breath visible",
+  "100": "winter, empty gym, girl tying shoes, jacket over uniform, cold air feel",
+  "110": "winter, warm gym light, girl warming up, knit hat, basketball in hand"
+</td>
+    </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>3.Strong baseline - 生成完整角色動畫</td><br>
+       <img src="3.gif" ><br>
+       <td> 使用提示詞:
+     "0": "spring day, outdoor basketball court, girl shooting, ponytail, sportswear",
+  "10": "spring day, outdoor basketball court, girl shooting, ponytail, sportswear",
+  "20": "spring day, outdoor basketball court, girl dribbling, breeze, sweatband",
+  "30": "summer day, indoor gym, girl jump shot, basketball uniform, sunlight",
+  "40": "summer day, indoor gym, girl layup, dynamic pose, number jersey",
+  "50": "summer day, indoor gym, girl mid-air, intense focus, crowd blurred",
+  "60": "fall day, outdoor court with fallen leaves, girl passing ball, long sleeves",
+  "70": "fall day, windy court, girl catching pass, headband, rustling leaves",
+  "80": "fall day, street basketball, girl defending, layered sportswear",
+  "90": "winter, snow-covered court, girl practicing alone, hoodie, breath visible",
+  "100": "winter, empty gym, girl tying shoes, jacket over uniform, cold air feel",
+  "110": "winter, warm gym light, girl warming up, knit hat, basketball in hand"
+</td>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
